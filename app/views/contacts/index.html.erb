@@ -1,7 +1,6 @@
 <h1>Contacts</h1>
 <% @contact.each do |cont| %>
-  <p>First Name: <%=  cont.first_name %><br>
-    Last Name: <%= cont.last_name %><br>
+  <p>Name: <a href="/contacts/:<%=cont.id%>"><%=  cont.first_name %> <%= cont.last_name %></a><br>
     E-mail: <%= cont.email %><br>
     Phone Number: <%= cont.phone_number %>
   </p>
