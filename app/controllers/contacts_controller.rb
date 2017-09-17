@@ -3,6 +3,6 @@ class ContactsController < ApplicationController
 		@contact = Contact.all 
 	end	
   def show
-    @contact = Contact.find_by(id: params[:id])
+    @contact = Contact.find(params[:id])
   end
 end
